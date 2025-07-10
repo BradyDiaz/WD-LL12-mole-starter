@@ -3,9 +3,8 @@ let gameRunning = false;
 let lastHole = null;
 
 const GAME_DURATION = 15000;
-const MIN_PEEP_TIME = 500;
-const MAX_PEEP_TIME = 1000;
-
+const MIN_PEEP_TIME = 1000;
+const MAX_PEEP_TIME = 2000;
 // Make a mole appear
 function showMole() {
   if (!gameRunning) return;
@@ -13,13 +12,13 @@ function showMole() {
   const peepDuration = getRandomTime(MIN_PEEP_TIME, MAX_PEEP_TIME);
   const hole = getRandomHole(holes);
 
-  // Add the proper class 
-  hole.classList.add('up');
+  // Add the proper class
+  hole.classList.add("up");
   moleCount++;
   moleCountDisplay.textContent = moleCount;
 
   setTimeout(() => {
-    hole.classList.remove('up');
+    hole.classList.remove("up");
     if (gameRunning) showMole();
   }, peepDuration);
 }

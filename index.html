@@ -1,29 +1,56 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Whack-a-Mole</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <h1>Whack-a-Mole</h1>
-  <div class="score">Score: <span id="score">0</span></div>
-  <div class="mole-count">Moles: <span id="moleCount">0</span></div>
-  <div class="game">
-    <div class="hole"><span class="hole-number">1</span></div>
-    <div class="hole"><span class="hole-number">2</span></div>
-    <div class="hole"><span class="hole-number">3</span></div>
-    <div class="hole"><span class="hole-number">4</span></div>
-    <div class="hole"><span class="hole-number">5</span></div>
-    <div class="hole"><span class="hole-number">6</span></div>
-    <div class="hole"><span class="hole-number">7</span></div>
-    <div class="hole"><span class="hole-number">8</span></div>
-    <div class="hole"><span class="hole-number">9</span></div>
-  </div>
-  <button id="startButton">Start Game</button>
-  <script src="provided.js"></script>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whac-A-Mole Keyboard Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="timer">Moles appeared: <span id="moleCount">0</span></div>
+    <button id="startButton">Start Game</button>
+
+    <div class="game">
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">1</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">2</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">3</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">4</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">5</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">6</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">7</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">8</div>
+      </div>
+      <div class="hole">
+        <div class="mole"></div>
+        <div class="hole-number">9</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="provided.js"></script>
+  </body>
 </html>
